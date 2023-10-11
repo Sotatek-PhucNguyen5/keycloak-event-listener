@@ -12,7 +12,7 @@ public class KeycloakEventListenerFactory implements EventListenerProviderFactor
 
   @Override
   public EventListenerProvider create(KeycloakSession keycloakSession) {
-    return new KeycloakEventListener();
+    return new KeycloakEventListener(keycloakSession);
   }
 
   @Override
